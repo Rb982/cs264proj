@@ -1,0 +1,85 @@
+cargo:rerun-if-env-changed=LIBUSB_1.0_NO_PKG_CONFIG
+cargo:rerun-if-env-changed=PKG_CONFIG
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-apple-darwin
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_apple_darwin
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-apple-darwin
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_apple_darwin
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-apple-darwin
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_apple_darwin
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+Can't find libusb pkg: Failure { command: "\"pkg-config\" \"--libs\" \"--cflags\" \"libusb-1.0\"", output: Output { status: ExitStatus(ExitStatus(256)), stdout: "", stderr: "Package libusb-1.0 was not found in the pkg-config search path.\nPerhaps you should add the directory containing `libusb-1.0.pc\'\nto the PKG_CONFIG_PATH environment variable\nNo package \'libusb-1.0\' found\n" } }
+cargo:vendored=1
+cargo:static=1
+cargo:include=/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/include
+cargo:rustc-link-lib=framework=CoreFoundation
+cargo:rustc-link-lib=framework=IOKit
+cargo:rerun-if-env-changed=LIBUDEV_NO_PKG_CONFIG
+cargo:rerun-if-env-changed=PKG_CONFIG
+cargo:rerun-if-env-changed=LIBUDEV_STATIC
+cargo:rerun-if-env-changed=LIBUDEV_DYNAMIC
+cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-apple-darwin
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_apple_darwin
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-apple-darwin
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_apple_darwin
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-apple-darwin
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_apple_darwin
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+Including posix!
+TARGET = Some("x86_64-apple-darwin")
+OPT_LEVEL = Some("0")
+HOST = Some("x86_64-apple-darwin")
+CC_x86_64-apple-darwin = None
+CC_x86_64_apple_darwin = None
+HOST_CC = None
+CC = None
+CFLAGS_x86_64-apple-darwin = None
+CFLAGS_x86_64_apple_darwin = None
+HOST_CFLAGS = None
+CFLAGS = None
+CRATE_CC_NO_DEFAULTS = None
+DEBUG = Some("true")
+CARGO_CFG_TARGET_FEATURE = Some("fxsr,sse,sse2,sse3,ssse3")
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23" "-I" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb" "-Wall" "-Wextra" "-DOS_DARWIN=1" "-DHAVE_DLFCN_H=1" "-DHAVE_GETTIMEOFDAY=1" "-DHAVE_INTTYPES_H=1" "-DHAVE_MEMORY_H=1" "-DHAVE_POLL_H=1" "-DHAVE_STDINT_H=1" "-DHAVE_STDLIB_H=1" "-DHAVE_STRINGS_H=1" "-DHAVE_STRING_H=1" "-DHAVE_STRUCT_TIMESPEC=1" "-DHAVE_SYS_STAT_H=1" "-DHAVE_SYS_TIME_H=1" "-DHAVE_SYS_TYPES_H=1" "-DHAVE_UNISTD_H=1" "-DPOLL_NFDS_TYPE=nfds_t" "-DSTDC_HEADERS=1" "-DTHREADS_POSIX=1" "-DDEFAULT_VISIBILITY=__attribute__((visibility(\"default\")))" "-o" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb/os/darwin_usb.o" "-c" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb/os/darwin_usb.c"
+exit code: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23" "-I" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb" "-Wall" "-Wextra" "-DOS_DARWIN=1" "-DHAVE_DLFCN_H=1" "-DHAVE_GETTIMEOFDAY=1" "-DHAVE_INTTYPES_H=1" "-DHAVE_MEMORY_H=1" "-DHAVE_POLL_H=1" "-DHAVE_STDINT_H=1" "-DHAVE_STDLIB_H=1" "-DHAVE_STRINGS_H=1" "-DHAVE_STRING_H=1" "-DHAVE_STRUCT_TIMESPEC=1" "-DHAVE_SYS_STAT_H=1" "-DHAVE_SYS_TIME_H=1" "-DHAVE_SYS_TYPES_H=1" "-DHAVE_UNISTD_H=1" "-DPOLL_NFDS_TYPE=nfds_t" "-DSTDC_HEADERS=1" "-DTHREADS_POSIX=1" "-DDEFAULT_VISIBILITY=__attribute__((visibility(\"default\")))" "-o" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb/os/poll_posix.o" "-c" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb/os/poll_posix.c"
+exit code: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23" "-I" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb" "-Wall" "-Wextra" "-DOS_DARWIN=1" "-DHAVE_DLFCN_H=1" "-DHAVE_GETTIMEOFDAY=1" "-DHAVE_INTTYPES_H=1" "-DHAVE_MEMORY_H=1" "-DHAVE_POLL_H=1" "-DHAVE_STDINT_H=1" "-DHAVE_STDLIB_H=1" "-DHAVE_STRINGS_H=1" "-DHAVE_STRING_H=1" "-DHAVE_STRUCT_TIMESPEC=1" "-DHAVE_SYS_STAT_H=1" "-DHAVE_SYS_TIME_H=1" "-DHAVE_SYS_TYPES_H=1" "-DHAVE_UNISTD_H=1" "-DPOLL_NFDS_TYPE=nfds_t" "-DSTDC_HEADERS=1" "-DTHREADS_POSIX=1" "-DDEFAULT_VISIBILITY=__attribute__((visibility(\"default\")))" "-o" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb/os/threads_posix.o" "-c" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb/os/threads_posix.c"
+exit code: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23" "-I" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb" "-Wall" "-Wextra" "-DOS_DARWIN=1" "-DHAVE_DLFCN_H=1" "-DHAVE_GETTIMEOFDAY=1" "-DHAVE_INTTYPES_H=1" "-DHAVE_MEMORY_H=1" "-DHAVE_POLL_H=1" "-DHAVE_STDINT_H=1" "-DHAVE_STDLIB_H=1" "-DHAVE_STRINGS_H=1" "-DHAVE_STRING_H=1" "-DHAVE_STRUCT_TIMESPEC=1" "-DHAVE_SYS_STAT_H=1" "-DHAVE_SYS_TIME_H=1" "-DHAVE_SYS_TYPES_H=1" "-DHAVE_UNISTD_H=1" "-DPOLL_NFDS_TYPE=nfds_t" "-DSTDC_HEADERS=1" "-DTHREADS_POSIX=1" "-DDEFAULT_VISIBILITY=__attribute__((visibility(\"default\")))" "-o" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb/core.o" "-c" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb/core.c"
+exit code: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23" "-I" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb" "-Wall" "-Wextra" "-DOS_DARWIN=1" "-DHAVE_DLFCN_H=1" "-DHAVE_GETTIMEOFDAY=1" "-DHAVE_INTTYPES_H=1" "-DHAVE_MEMORY_H=1" "-DHAVE_POLL_H=1" "-DHAVE_STDINT_H=1" "-DHAVE_STDLIB_H=1" "-DHAVE_STRINGS_H=1" "-DHAVE_STRING_H=1" "-DHAVE_STRUCT_TIMESPEC=1" "-DHAVE_SYS_STAT_H=1" "-DHAVE_SYS_TIME_H=1" "-DHAVE_SYS_TYPES_H=1" "-DHAVE_UNISTD_H=1" "-DPOLL_NFDS_TYPE=nfds_t" "-DSTDC_HEADERS=1" "-DTHREADS_POSIX=1" "-DDEFAULT_VISIBILITY=__attribute__((visibility(\"default\")))" "-o" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb/descriptor.o" "-c" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb/descriptor.c"
+exit code: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23" "-I" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb" "-Wall" "-Wextra" "-DOS_DARWIN=1" "-DHAVE_DLFCN_H=1" "-DHAVE_GETTIMEOFDAY=1" "-DHAVE_INTTYPES_H=1" "-DHAVE_MEMORY_H=1" "-DHAVE_POLL_H=1" "-DHAVE_STDINT_H=1" "-DHAVE_STDLIB_H=1" "-DHAVE_STRINGS_H=1" "-DHAVE_STRING_H=1" "-DHAVE_STRUCT_TIMESPEC=1" "-DHAVE_SYS_STAT_H=1" "-DHAVE_SYS_TIME_H=1" "-DHAVE_SYS_TYPES_H=1" "-DHAVE_UNISTD_H=1" "-DPOLL_NFDS_TYPE=nfds_t" "-DSTDC_HEADERS=1" "-DTHREADS_POSIX=1" "-DDEFAULT_VISIBILITY=__attribute__((visibility(\"default\")))" "-o" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb/hotplug.o" "-c" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb/hotplug.c"
+exit code: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23" "-I" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb" "-Wall" "-Wextra" "-DOS_DARWIN=1" "-DHAVE_DLFCN_H=1" "-DHAVE_GETTIMEOFDAY=1" "-DHAVE_INTTYPES_H=1" "-DHAVE_MEMORY_H=1" "-DHAVE_POLL_H=1" "-DHAVE_STDINT_H=1" "-DHAVE_STDLIB_H=1" "-DHAVE_STRINGS_H=1" "-DHAVE_STRING_H=1" "-DHAVE_STRUCT_TIMESPEC=1" "-DHAVE_SYS_STAT_H=1" "-DHAVE_SYS_TIME_H=1" "-DHAVE_SYS_TYPES_H=1" "-DHAVE_UNISTD_H=1" "-DPOLL_NFDS_TYPE=nfds_t" "-DSTDC_HEADERS=1" "-DTHREADS_POSIX=1" "-DDEFAULT_VISIBILITY=__attribute__((visibility(\"default\")))" "-o" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb/io.o" "-c" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb/io.c"
+cargo:warning=/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb/io.c:2300:30: warning: comparison of integers of different signs: 'int' and 'nfds_t' (aka 'unsigned int') [-Wsign-compare]
+cargo:warning=                for (i = internal_nfds ; i < nfds ; ++i) {
+cargo:warning=                                         ~ ^ ~~~~
+cargo:warning=1 warning generated.
+exit code: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23" "-I" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb" "-Wall" "-Wextra" "-DOS_DARWIN=1" "-DHAVE_DLFCN_H=1" "-DHAVE_GETTIMEOFDAY=1" "-DHAVE_INTTYPES_H=1" "-DHAVE_MEMORY_H=1" "-DHAVE_POLL_H=1" "-DHAVE_STDINT_H=1" "-DHAVE_STDLIB_H=1" "-DHAVE_STRINGS_H=1" "-DHAVE_STRING_H=1" "-DHAVE_STRUCT_TIMESPEC=1" "-DHAVE_SYS_STAT_H=1" "-DHAVE_SYS_TIME_H=1" "-DHAVE_SYS_TYPES_H=1" "-DHAVE_UNISTD_H=1" "-DPOLL_NFDS_TYPE=nfds_t" "-DSTDC_HEADERS=1" "-DTHREADS_POSIX=1" "-DDEFAULT_VISIBILITY=__attribute__((visibility(\"default\")))" "-o" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb/strerror.o" "-c" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb/strerror.c"
+exit code: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23" "-I" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb" "-Wall" "-Wextra" "-DOS_DARWIN=1" "-DHAVE_DLFCN_H=1" "-DHAVE_GETTIMEOFDAY=1" "-DHAVE_INTTYPES_H=1" "-DHAVE_MEMORY_H=1" "-DHAVE_POLL_H=1" "-DHAVE_STDINT_H=1" "-DHAVE_STDLIB_H=1" "-DHAVE_STRINGS_H=1" "-DHAVE_STRING_H=1" "-DHAVE_STRUCT_TIMESPEC=1" "-DHAVE_SYS_STAT_H=1" "-DHAVE_SYS_TIME_H=1" "-DHAVE_SYS_TYPES_H=1" "-DHAVE_UNISTD_H=1" "-DPOLL_NFDS_TYPE=nfds_t" "-DSTDC_HEADERS=1" "-DTHREADS_POSIX=1" "-DDEFAULT_VISIBILITY=__attribute__((visibility(\"default\")))" "-o" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb/sync.o" "-c" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb/sync.c"
+exit code: 0
+AR_x86_64-apple-darwin = None
+AR_x86_64_apple_darwin = None
+HOST_AR = None
+AR = None
+running: "ar" "cq" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/libusb.a" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb/os/darwin_usb.o" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb/os/poll_posix.o" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb/os/threads_posix.o" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb/core.o" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb/descriptor.o" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb/hotplug.o" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb/io.o" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb/strerror.o" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/source/libusb-1.0.23/libusb/sync.o"
+exit code: 0
+running: "ar" "s" "/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out/libusb.a"
+exit code: 0
+cargo:rustc-link-lib=static=usb
+cargo:rustc-link-search=native=/Users/RobertBacon/projects/cs264/final_project_rust/target/debug/build/libusb1-sys-3ea071d2aa936cab/out
