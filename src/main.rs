@@ -1,7 +1,15 @@
-use rusb;
+//use rusb;
+use usb;
 use std::slice;
 use std::time::Duration;
 fn main() {
+    let ctx = usb::Context::new();
+    let microphone = match ctx.find_by_vid_pid(22136, 4096){
+        Some(t) => t,
+        None => panic!("No device found")
+    };
+    
+    /*
     //Step one - list all usb devices, see what I can see about them
     let _ctx = rusb::Context::new();//*
     let devices = match rusb::DeviceList::new() {
@@ -85,6 +93,6 @@ fn main() {
     
     microphone.claim_interface(1);
     microphone.set_alternate_setting(1, 1);*/
-
+    */
     
 }
